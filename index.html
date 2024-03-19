@@ -1,0 +1,21 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quantitative Analysis</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Quantitative Analysis</h1>
+    <form action="/analyze" method="post" enctype="multipart/form-data">
+        <label for="paragraph">Enter Paragraph:</label><br>
+        <textarea id="paragraph" name="paragraph" rows="4" cols="50"></textarea><br><br>
+        <input type="file" name="file"><br><br>
+        <label for="question">Ask a Question:</label><br>
+        <input type="text" id="question" name="question"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

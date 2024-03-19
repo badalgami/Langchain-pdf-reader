@@ -1,0 +1,6 @@
+langchain-community==0.0.28
+PyPDF2==1.26.0
+docx==0.2.4
+
+#Put your Open AI API key below
+OPENAI_API_KEY=your_api_key_here
